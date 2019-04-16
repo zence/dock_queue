@@ -1,0 +1,4 @@
+echo "hell world" 1> there_bash.txt 2> where_bash.txt ::end_command:: o: /home/output/where_bash.txt o: /home/output/there_bash.txt p: 50000
+bash hello_world.sh 14 > output.txt ::end_command:: c: bash i: /home/hello_world.sh o: /home/output/output.txt p: 20
+head -n 5 output.txt > output.copy.txt ::end_command:: c: head i: /home/output/output.txt o: /home/output/output.copy.txt p: 10
+python -c "in_f = open('output.copy.txt', 'r'); print(in_f.readline()); in_f.close()" > output.python.txt ::end_command:: c: python i: /home/output/output.copy.txt o: /home/output/output.python.txt p: 0

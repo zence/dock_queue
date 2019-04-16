@@ -1,0 +1,1 @@
+hello_worl > output.txt ::end_command:: o: /home/output/output.txt
